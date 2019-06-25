@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Movie Catalog</string>
+    <string name="movie_description">Description</string>
+    <string name="movie_synopsis">Synopsis :</string>
+
+    <string-array name="data_movie_name">
+        <item>Avangers: Infinity War</item>
+        <item>Venom</item>
+        <item>A Star Is Born</item>
+        <item>Bumblebee</item>
+        <item>Spider-Man: Into The Spider Verse</item>
+        <item>Bohemian Rhapsody</item>
+        <item>The Girl</item>
+        <item>The Mule</item>
+        <item>Bird Box</item>
+        <item>Deadpool</item>
+    </string-array>
+
+    <string-array name="data_movie_year">
+
+    </string-array>
+
+    <string-array name="data_movie_rate">
+
+    </string-array>
+
+    <string-array name="data_movie_synopsis">
+
+    </string-array>
+
+    <string-array name="data_movie_genre">
+
+    </string-array>
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyTestingApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="set_nilai">Set Nilai</string>
+</resources>
