@@ -3,6 +3,7 @@
     <string name="movie_description">Description</string>
     <string name="movie_synopsis">Synopsis :</string>
     <string name="title_movie_synopsis">Synopsis :</string>
+    <string name="featured_crew">Featured Crew :</string>
 
     <array name="data_movie_image">
         <item>@drawable/poster_a_star</item>

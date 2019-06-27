@@ -1,8 +1,11 @@
 package id.xaxxis.moviecatalogapp;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -31,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
 
         prepare();
         addItem();
+
+        lvMovie.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent moveToDetail = new Intent(MainActivity.this, MovieDetailActivity.class);
+                moveToDetail.putExtra(MovieDetailActivity.EXTRA_MOVIE, movies.get(i));
+                startActivity(moveToDetail);
+            }
+        });
 
     }
 
