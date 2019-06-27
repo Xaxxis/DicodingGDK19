@@ -2,33 +2,143 @@
     <string name="app_name">Movie Catalog</string>
     <string name="movie_description">Description</string>
     <string name="movie_synopsis">Synopsis :</string>
+    <string name="title_movie_synopsis">Synopsis :</string>
 
-    <string-array name="data_movie_name">
-        <item>Avangers: Infinity War</item>
-        <item>Venom</item>
+    <array name="data_movie_image">
+        <item>@drawable/poster_a_star</item>
+        <item>@drawable/poster_aquaman</item>
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_birdbox</item>
+        <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_bumblebee</item>
+        <item>@drawable/poster_creed</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_dragonball</item>
+        <item>@drawable/poster_glass</item>
+        <item>@drawable/poster_hunterkiller</item>
+        <item>@drawable/poster_marrypopins</item>
+        <item>@drawable/poster_mortalengine</item>
+        <item>@drawable/poster_preman</item>
+        <item>@drawable/poster_robinhood</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_thegirl</item>
+        <item>@drawable/poster_themule</item>
+        <item>@drawable/poster_venom</item>
+    </array>
+
+    <string-array name="data_movie_title">
         <item>A Star Is Born</item>
-        <item>Bumblebee</item>
-        <item>Spider-Man: Into The Spider Verse</item>
+        <item>Aquaman</item>
+        <item>Avangers: Infinity War</item>
+        <item>Bird Box</item>
         <item>Bohemian Rhapsody</item>
+        <item>Bumblebee</item>
+        <item>Creed</item>
+        <item>Deadpool</item>
+        <item>How To Train Your Dragon</item>
+        <item>The Movie Dragon Ball</item>
+        <item>Glass</item>
+        <item>Hunter Killer</item>
+        <item>Marry Popins Returns</item>
+        <item>Mortal Engine</item>
+        <item>Preman Pensiun</item>
+        <item>Robin Hood</item>
+        <item>Spider-Man: Into The Spider Verse</item>
         <item>The Girl</item>
         <item>The Mule</item>
-        <item>Bird Box</item>
-        <item>Deadpool</item>
+        <item>Venom</item>
     </string-array>
 
     <string-array name="data_movie_year">
-
+        <item>2017</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
     </string-array>
 
     <string-array name="data_movie_rate">
-
+        <item>2017</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
     </string-array>
 
     <string-array name="data_movie_synopsis">
-
+        <item>2017</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
     </string-array>
 
     <string-array name="data_movie_genre">
-
+        <item>2017</item>
+        <item>2019</item>
+        <item>2019</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2016</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2017</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
     </string-array>
 </resources>

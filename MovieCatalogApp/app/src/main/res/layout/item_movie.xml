@@ -24,10 +24,8 @@
 
         <TextView
             android:id="@+id/tv_movie_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/TextContent.Title"
             tools:text="Avanger: Age Of Ultron"
-            android:textStyle="bold"
             android:layout_toRightOf="@+id/img_movie"
             android:layout_marginLeft="@dimen/activity_vertical_margin"/>
 
@@ -60,8 +58,13 @@
             android:layout_toRightOf="@+id/img_movie"
             android:layout_marginTop="40dp"
             android:layout_marginLeft="@dimen/activity_vertical_margin"
-            android:text="@string/movie_synopsist"/>
+            android:text="@string/title_movie_synopsis"/>
 
+        <TextView
+            android:id="@+id/tv_movie_synopsis"
+            style="@style/TextContent"
+            android:layout_toRightOf="@+id/img_movie"
+            android:layout_marginTop="65dp" />
 
     </RelativeLayout>
 </android.support.v7.widget.CardView>
