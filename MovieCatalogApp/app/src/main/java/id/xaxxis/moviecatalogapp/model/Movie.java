@@ -9,30 +9,11 @@ public class Movie implements Parcelable {
     private String movieTitle;
     private String movieYear;
     private String movieRating;
+    private String movieGenre;
+    private String movieDuration;
     private String movieSynopsis;
 
-    public Movie() {
-    }
 
-    protected Movie(Parcel in) {
-        photoCover = in.readInt();
-        movieTitle = in.readString();
-        movieYear = in.readString();
-        movieRating = in.readString();
-        movieSynopsis = in.readString();
-    }
-
-    public static final Creator<Movie> CREATOR = new Creator<Movie>() {
-        @Override
-        public Movie createFromParcel(Parcel in) {
-            return new Movie(in);
-        }
-
-        @Override
-        public Movie[] newArray(int size) {
-            return new Movie[size];
-        }
-    };
 
     public int getPhotoCover() {
         return photoCover;
@@ -66,6 +47,22 @@ public class Movie implements Parcelable {
         this.movieRating = movieRating;
     }
 
+    public String getMovieGenre() {
+        return movieGenre;
+    }
+
+    public void setMovieGenre(String movieGenre) {
+        this.movieGenre = movieGenre;
+    }
+
+    public String getMovieDuration() {
+        return movieDuration;
+    }
+
+    public void setMovieDuration(String movieDuration) {
+        this.movieDuration = movieDuration;
+    }
+
     public String getMovieSynopsis() {
         return movieSynopsis;
     }
@@ -74,17 +71,45 @@ public class Movie implements Parcelable {
         this.movieSynopsis = movieSynopsis;
     }
 
+
     @Override
     public int describeContents() {
         return 0;
     }
 
     @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(photoCover);
-        parcel.writeString(movieTitle);
-        parcel.writeString(movieYear);
-        parcel.writeString(movieRating);
-        parcel.writeString(movieSynopsis);
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(this.photoCover);
+        dest.writeString(this.movieTitle);
+        dest.writeString(this.movieYear);
+        dest.writeString(this.movieRating);
+        dest.writeString(this.movieGenre);
+        dest.writeString(this.movieDuration);
+        dest.writeString(this.movieSynopsis);
     }
+
+    public Movie() {
+    }
+
+    protected Movie(Parcel in) {
+        this.photoCover = in.readInt();
+        this.movieTitle = in.readString();
+        this.movieYear = in.readString();
+        this.movieRating = in.readString();
+        this.movieGenre = in.readString();
+        this.movieDuration = in.readString();
+        this.movieSynopsis = in.readString();
+    }
+
+    public static final Creator<Movie> CREATOR = new Creator<Movie>() {
+        @Override
+        public Movie createFromParcel(Parcel source) {
+            return new Movie(source);
+        }
+
+        @Override
+        public Movie[] newArray(int size) {
+            return new Movie[size];
+        }
+    };
 }

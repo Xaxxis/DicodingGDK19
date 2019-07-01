@@ -10,6 +10,11 @@
         android:id="@+id/lv_movie"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        style="@style/listStyle"
         tools:listitem="@layout/item_movie">
     </ListView>
 

@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private String[] dataMovieYear;
     private String[] dataMovieRate;
     private String[] dataMovieSynopsis;
+    private String[] dataMovieGenre;
+    private String[] dataMovieDuration;
     private ArrayList<Movie> movies;
     private ListMovieAdapter adapter;
 
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent moveToDetail = new Intent(MainActivity.this, MovieDetailActivity.class);
-                moveToDetail.putExtra(MovieDetailActivity.EXTRA_MOVIE, movies.get(i));
+                moveToDetail.putExtra("movie", movies.get(i));
                 startActivity(moveToDetail);
             }
         });
@@ -52,6 +54,9 @@ public class MainActivity extends AppCompatActivity {
         dataMovieYear = getResources().getStringArray(R.array.data_movie_year);
         dataMovieRate = getResources().getStringArray(R.array.data_movie_rate);
         dataMovieSynopsis = getResources().getStringArray(R.array.data_movie_synopsis);
+        dataMovieDuration = getResources().getStringArray(R.array.data_movie_duration);
+        dataMovieGenre = getResources().getStringArray(R.array.data_movie_genre);
+
     }
 
     private void addItem(){
@@ -65,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
             movie.setMovieRating(dataMovieRate[i]);
             movie.setMovieYear(dataMovieYear[i]);
             movie.setMovieSynopsis(dataMovieSynopsis[i]);
+            movie.setMovieDuration(dataMovieDuration[i]);
+            movie.setMovieGenre(dataMovieGenre[i]);
             movies.add(movie);
         }
         adapter.setMovies(movies);
