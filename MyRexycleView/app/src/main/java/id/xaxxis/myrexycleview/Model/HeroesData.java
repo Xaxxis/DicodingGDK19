@@ -1,4 +1,4 @@
-package id.xaxxis.myrexycleview;
+package id.xaxxis.myrexycleview.Model;
 
 import java.util.ArrayList;
 

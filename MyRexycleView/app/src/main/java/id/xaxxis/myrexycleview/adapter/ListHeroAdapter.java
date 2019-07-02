@@ -1,4 +1,4 @@
-package id.xaxxis.myrexycleview;
+package id.xaxxis.myrexycleview.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -13,6 +13,9 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
 import java.util.ArrayList;
+
+import id.xaxxis.myrexycleview.Model.Hero;
+import id.xaxxis.myrexycleview.R;
 
 public class ListHeroAdapter extends RecyclerView.Adapter<ListHeroAdapter.CategoryViewHolder> {
     private final Context context;
