@@ -3,6 +3,7 @@ package id.xaxxis.mynavigationdrawer;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -58,6 +59,12 @@ public class MainActivity extends AppCompatActivity
                 .load(profileImageUrl)
                 .into(circleImageView);
 
+
+        if(savedInstanceState == null){
+            Fragment currentFragmetn = new HomeFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.content_main, currentFragmetn).commit();
+        }
+
     }
 
     @Override
@@ -112,23 +119,37 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        Bundle bundle = new Bundle();
+        Fragment fragment = null;
+        String title = "";
         if (id == R.id.nav_home) {
-            // Handle the camera action
+            title = "Home";
+            fragment = new HomeFragment();
+        } else if (id == R.id.nav_camera) {
+            title = "Camera";
+            fragment = new PageFragment();
+            bundle.putString(PageFragment.EXTRAS, "Camera");
+            fragment.setArguments(bundle);
         } else if (id == R.id.nav_gallery) {
-
+            title = "Gallery";
+            fragment = new PageFragment();
+            bundle.putString(PageFragment.EXTRAS, "Gallery");
+            fragment.setArguments(bundle);
         } else if (id == R.id.nav_slideshow) {
-
         } else if (id == R.id.nav_manage) {
-
         } else if (id == R.id.nav_share) {
-
         } else if (id == R.id.nav_send) {
-
+        }
+        if (fragment != null) {
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.content_main, fragment)
+                    .commit();
         }
 
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+        if (getSupportActionBar() != null)
+            getSupportActionBar().setTitle(title);
+        drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
 }
