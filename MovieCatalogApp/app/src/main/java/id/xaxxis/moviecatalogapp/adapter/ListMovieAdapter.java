@@ -16,6 +16,8 @@ public class ListMovieAdapter extends BaseAdapter {
     private Context context;
     private ArrayList<Movie> movies;
 
+
+
     public void setMovies(ArrayList<Movie> movies) {
         this.movies = movies;
     }

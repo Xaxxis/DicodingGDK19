@@ -8,8 +8,32 @@
     <string name="favorite_on">Favorited</string>
     <string name="btn_share">Share</string>
     <string name="btn_favorite">Favorite</string>
+    <string name="menu_profile">Profile</string>
 
     <array name="data_movie_image">
+        <item>@drawable/poster_a_star</item>
+        <item>@drawable/poster_aquaman</item>
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_birdbox</item>
+        <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_bumblebee</item>
+        <item>@drawable/poster_creed</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_dragonball</item>
+        <item>@drawable/poster_glass</item>
+        <item>@drawable/poster_hunterkiller</item>
+        <item>@drawable/poster_marrypopins</item>
+        <item>@drawable/poster_mortalengine</item>
+        <item>@drawable/poster_preman</item>
+        <item>@drawable/poster_robinhood</item>
+        <item>@drawable/poster_spiderman</item>
+        <item>@drawable/poster_thegirl</item>
+        <item>@drawable/poster_themule</item>
+        <item>@drawable/poster_venom</item>
+    </array>
+
+    <array name="data_movie_banner">
         <item>@drawable/poster_a_star</item>
         <item>@drawable/poster_aquaman</item>
         <item>@drawable/poster_avengerinfinity</item>
@@ -135,4 +159,38 @@
         <item>2h 2m</item>
         <item>2h 10m</item>
     </string-array>
+
+    <string-array name="data_is_favorite">
+        <item>true</item>
+        <item>false</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+        <item>false</item>
+        <item>false</item>
+        <item>true</item>
+        <item>true</item>
+        <item>false</item>
+    </string-array>
+
+    <string-array name="data_movie_category">
+        <item>Movie Show</item>
+        <item>TV Show</item>
+        <item>Movie Show</item>
+        <item>TV Show</item>
+        <item>TV Show</item>
+        <item>TV Show</item>
+        <item>TV Show</item>
+        <item>TV Show</item>
+        <item>Movie Show</item>
+        <item>Movie Show</item>
+        <item>Movie Show</item>
+        <item>Movie Show</item>
+        <item>TV Show</item>
+    </string-array>
+
+
 </resources>

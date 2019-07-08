@@ -9,7 +9,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import id.xaxxis.moivecatalogue.R;
 import id.xaxxis.moivecatalogue.fragment.MovieFragment;
-import id.xaxxis.moivecatalogue.fragment.TvFragment;
 
 public class SectionPagerAdapter extends FragmentPagerAdapter {
 
@@ -28,7 +27,7 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new MovieFragment();
             case 1:
-                return new TvFragment();
+                return new MovieFragment();
         }
         return null;
     }
@@ -43,4 +42,6 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return TAB_TITLES.length;
     }
+
+
 }

@@ -2,7 +2,6 @@ package id.xaxxis.moivecatalogue.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,6 +26,7 @@ public class ListMovieAdapter extends RecyclerView.Adapter<ListMovieAdapter.Movi
 
     public ListMovieAdapter(Context mContext) {
         this.mContext = mContext;
+        movies = new ArrayList<>();
     }
 
     public ArrayList<Movie> getMovies() {
@@ -44,6 +44,7 @@ public class ListMovieAdapter extends RecyclerView.Adapter<ListMovieAdapter.Movi
         return new MovieViewHolder(view);
     }
 
+
     @Override
     public void onBindViewHolder(@NonNull ListMovieAdapter.MovieViewHolder movieViewHolder, int i) {
         final Movie movie = getMovies().get(i);
@@ -56,11 +57,6 @@ public class ListMovieAdapter extends RecyclerView.Adapter<ListMovieAdapter.Movi
         movieViewHolder.tvGenre.setText(movie.getGenre());
         movieViewHolder.tvDuration.setText(movie.getDuration());
 
-        if(movie.isFavorite()){
-            movieViewHolder.tglFavorite.setBackground(ContextCompat.getDrawable(mContext, R.drawable.ic_favorite_on_24dp));
-        } else{
-            movieViewHolder.tglFavorite.setBackground(ContextCompat.getDrawable(mContext, R.drawable.ic_favorite_off_24dp));
-        }
 
         movieViewHolder.btnShare.setOnClickListener(new CustomOnItemClickListener(i, new CustomOnItemClickListener.OnItemClickCallback() {
             @Override
