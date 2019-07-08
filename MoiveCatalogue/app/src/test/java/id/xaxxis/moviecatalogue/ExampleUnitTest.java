@@ -1,4 +1,4 @@
-package id.xaxxis.moivecatalogue;
+package id.xaxxis.moviecatalogue;
 
 import org.junit.Test;
 

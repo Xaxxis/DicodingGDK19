@@ -1,33 +1,38 @@
-package id.xaxxis.moivecatalogue.adapter;
+package id.xaxxis.moviecatalogue.adapter;
 
 import android.content.Context;
 import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import id.xaxxis.moivecatalogue.R;
-import id.xaxxis.moivecatalogue.fragment.MovieFragment;
+import java.util.ArrayList;
+
+import id.xaxxis.moviecatalogue.R;
+import id.xaxxis.moviecatalogue.fragment.MovieFragment;
+import id.xaxxis.moviecatalogue.model.Movie;
 
 public class SectionPagerAdapter extends FragmentPagerAdapter {
 
-    @StringRes
     private static final int[] TAB_TITLES = new int[] {R.string.tab_movie, R.string.tab_tv_show};
     private final Context mContext;
+    private ArrayList<Movie> movies;
 
-    public SectionPagerAdapter(Context context, FragmentManager fm) {
+
+    public SectionPagerAdapter(Context mContext, FragmentManager fm, ArrayList<Movie> movieArrayList) {
         super(fm);
-        mContext = context;
+        this.mContext = mContext;
+        this.movies = movieArrayList;
     }
 
     @Override
     public Fragment getItem(int i) {
+        MovieFragment movieFragment = new MovieFragment();
         switch (i){
             case 0:
-                return new MovieFragment();
+                return movieFragment.newInstance(movies);
             case 1:
-                return new MovieFragment();
+                return movieFragment.newInstance(movies);
         }
         return null;
     }
@@ -42,6 +47,4 @@ public class SectionPagerAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return TAB_TITLES.length;
     }
-
-
 }

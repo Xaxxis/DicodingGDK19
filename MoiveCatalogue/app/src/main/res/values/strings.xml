@@ -1,14 +1,18 @@
 <resources>
-    <string name="app_name">Moive Catalogue</string>
+    <string name="app_name">Movie Catalogue</string>
+    <string name="menu_profile">Menu Profile</string>
+    <string name="setting">Menu Setting</string>
     <string name="search">Search</string>
-    <string name="search_hint">Masukan kata kunci</string>
-    <string name="setting">Setting</string>
-    <string name="tab_movie">Movies</string>
-    <string name="tab_tv_show">TV Show</string>
-    <string name="favorite_on">Favorited</string>
-    <string name="btn_share">Share</string>
-    <string name="btn_favorite">Favorite</string>
-    <string name="menu_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tab_movie">Movie</string>
+    <string name="tab_tv_show">TV Shows</string>
+    <string name="desc_image_cover">Image Movie Cover</string>
+    <string name="desc_dummy">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</string>
+    <string name="rate_dummy">7/10</string>
+    <string name="genre_dummy">ACTION | FANTASY | ADVENTURE</string>
+    <string name="title_dummy">Venom (2018)</string>
 
     <array name="data_movie_image">
         <item>@drawable/poster_a_star</item>
@@ -191,6 +195,4 @@
         <item>Movie Show</item>
         <item>TV Show</item>
     </string-array>
-
-
 </resources>

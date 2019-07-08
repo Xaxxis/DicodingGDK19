@@ -1,4 +1,4 @@
-package id.xaxxis.moivecatalogue.model;
+package id.xaxxis.moviecatalogue.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

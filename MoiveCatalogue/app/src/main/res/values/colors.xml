@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#1C1D20</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="accent">#009688</color>
-    <color name="primaryText">#212121</color>
-    <color name="secondaryText">#727272</color>
-    <color name="icons">#FFFFFF</color>
-    <color name="divider">#B6B6B6</color>
-
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#EA4862</color>
 
     <color name="rateYellow">#FFDF00</color>
     <color name="normalRate">#EBD85B</color>
     <color name="colorCardView">#DDDCDB</color>
     <color name="colorTextField">#757575</color>
+
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#727272</color>
 </resources>

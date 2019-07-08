@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <!--<item android:id="@+id/menu_profile"-->
-        <!--android:title="@string/menu_profile"-->
-        <!--&gt;-->
-    <!--</item>-->
     <item android:id="@+id/search"
         android:title="@string/search"
         android:icon="@drawable/ic_search_24dp"
@@ -14,7 +10,7 @@
     <group android:menuCategory="container">
         <item android:id="@+id/setting"
             android:title="@string/setting"
-            android:icon = "@drawable/ic_settings_white_24dp"
+            android:icon = "@drawable/ic_settings_24dp"
             app:showAsAction="always" />
     </group>
 </menu>
